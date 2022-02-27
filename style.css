@@ -1,0 +1,73 @@
+header{
+	margin-bottom: 60px;
+}
+
+img{
+	max-width: 100%;
+}
+
+div.background-img{
+	background-image: url(https://i.postimg.cc/fLfWvk92/Art-Palace.jpg);
+	background-color: #cccccc;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+    height: 500px;
+	width: auto;
+}
+
+div.background-img h1{
+	font-size: 40px;
+	letter-spacing: 0.5rem;
+	color: white;
+	text-align: center;
+	font-family: 'DotGothic16', sans-serif;
+	margin-top:20px;
+}
+
+div.background-img h2{
+	font-size: 25px;
+	letter-spacing: 0.5rem;
+	color: white;
+	text-align: center;
+	font-family: 'DotGothic16', sans-serif;
+	margin-top:40px;
+}
+
+section div.container{
+	background-color: white;
+	margin-top: -90px;
+	padding-top: 50px;
+	position: relative;
+	border-radius: 15px;
+}
+
+
+p{
+	font-size: 20px;
+	letter-spacing: 0.05rem;
+	line-height:3rem;
+}
+
+@media(max-width: 768px){
+	iframe{
+		width: 500px ;
+		height: 300px ;
+	}
+}
+
+@media(max-width: 700px){
+	iframe{
+		width: 450px ;
+		height: 300px ;
+	}
+}
+
+@media(max-width: 640px){
+	iframe{
+		width: 400px ;
+		height: 300px ;
+	}
+}
