@@ -125,7 +125,7 @@ header div ul.navbar-nav.me-2.ml-10.mb-lg-0 {
 footer div.Outer{
 	position: relative;
 	background-color: black;
-	margin-top: 50px;
+	margin-top: -240px;
 	height: 80px;
 	width: 100%;
 	z-index: 0;
