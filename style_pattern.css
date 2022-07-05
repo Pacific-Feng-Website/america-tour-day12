@@ -143,25 +143,28 @@ footer div h6{
 	position: absolute;
 	cursor: pointer;
 	max-width: 100%;
-	width: 40px;
-	height: 42px;
-	bottom: 19px;
+	bottom: 20px;
 }
 
 #ig{
 	position: absolute;
 	cursor: pointer;
-	width: 45px;
-	height: 43px;
-	bottom: 19px;
+	max-width: 100%;
+	bottom: 20px;
 }
 
 #mail{
 	position: absolute;
 	cursor: pointer;
-	width: 45px;
-	height: 45px;
-	bottom: 19px;
+	max-width: 100%;
+	bottom: 20px;
+}
+
+#github{
+	position: absolute;
+	cursor: pointer;
+	max-width: 100%;
+	bottom: 20px;
 }
 
 #BottomTitle{
@@ -173,16 +176,21 @@ footer div h6{
 	
 	#fb{
 	  position: absolute;
-      left: 1200px;
+      left: 1135px;
       bottom: 14px;
 	}
 	#ig{
 	  position: absolute;
-      left: 1265px;
+      left: 1200px;
       bottom: 14px;
 	}
 	#mail{
-	position: absolute;
+	  position: absolute;
+	  left: 1265px;
+	  bottom: 14px;
+	}
+	#github{
+	  position: absolute;
 	  left: 1330px;
 	  bottom: 14px;
 	}
@@ -192,15 +200,20 @@ footer div h6{
 	
 	#fb{
 	  position: absolute;
-      left: 1000px;
+      left: 935px;
       bottom: 14px;
 	}
 	#ig{
 	  position: absolute;
-      left: 1065px;
+      left: 1000px;
       bottom: 14px;
 	}
 	#mail{
+	  position: absolute;
+	  left: 1065px;
+	  bottom: 14px;
+	}
+	#github{
 	position: absolute;
 	  left: 1130px;
 	  bottom: 14px;
@@ -211,16 +224,21 @@ footer div h6{
 	
 	#fb{
 	  position: absolute;
-      left: 800px;
+      left: 735px;
       bottom: 14px;
 	}
 	#ig{
 	  position: absolute;
-      left: 865px;
+      left: 800px;
       bottom: 14px;
 	}
 	#mail{
-	position: absolute;
+	  position: absolute;
+	  left: 865px;
+	  bottom: 14px;
+	}
+	#github{
+	  position: absolute;
 	  left: 930px;
 	  bottom: 14px;
 	}
@@ -230,15 +248,20 @@ footer div h6{
 	
 	#fb{
 	  position: absolute;
-      left: 600px;
+      left: 535px;
       bottom: 14px;
 	}
 	#ig{
 	  position: absolute;
-      left: 665px;
+      left: 600px;
       bottom: 14px;
 	}
 	#mail{
+	position: absolute;
+	  left: 665px;
+	  bottom: 14px;
+	}
+	#github{
 	position: absolute;
 	  left: 730px;
 	  bottom: 14px;
@@ -249,16 +272,21 @@ footer div h6{
 	
 	#fb{
 	  position: absolute;
-      left: 500px;
+      left: 435px;
       bottom: 14px;
 	}
 	#ig{
 	  position: absolute;
-      left: 565px;
+      left: 500px;
       bottom: 14px;
 	}
 	#mail{
-	position: absolute;
+	  position: absolute;
+	  left: 565px;
+	  bottom: 14px;
+	}
+	#github{
+	  position: absolute;
 	  left: 630px;
 	  bottom: 14px;
 	}
@@ -284,20 +312,54 @@ footer div h6{
 	z-index: 1;
 	}
 	
-	#fb{
+		#fb{
 	  position: absolute;
-      left: 150px;
+      left: 85px;
       bottom: 14px;
 	}
 	#ig{
 	  position: absolute;
-      left: 215px;
+      left: 150px;
       bottom: 14px;
 	}
 	#mail{
-	position: absolute;
+	  position: absolute;
+	  left: 215px;
+	  bottom: 14px;
+	}
+	#github{
+	  position: absolute;
 	  left: 280px;
 	  bottom: 14px;
 	}
 }
 
+.seperator{
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
+	height: 1px;
+}
+
+div.mce_inline_error{
+	background-color:#F0EFED !important;
+}
+
+html{
+	height: 100%; /*外層高度100%*/
+}
+
+body{
+	margin: 0;
+	min-height: 100%;
+	display: grid; 
+	grid-template-rows: 0.5fr auto;
+}
+
+.footer{
+	grid-row-start: 2;/*欄位從第二條橫線開始*/
+	grid-row-end: 3;/*欄位從第三條橫線結束*/
+
+}
