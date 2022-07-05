@@ -15,70 +15,21 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;500&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 					
+		<script src="https://kit.fontawesome.com/df50142789.js" crossorigin="anonymous"></script>
+			
+		<script>
+		  $(function(){
+			$('#headerPage').load("https://raw.githack.com/Pacific-Feng/Pacific-Feng.github.io/4565bdbc6572f3e1f7f9d177d86d868823469535/header.html");
+			$('#footerPage').load("https://raw.githack.com/Pacific-Feng/Pacific-Feng.github.io/4565bdbc6572f3e1f7f9d177d86d868823469535/footer.html");
+			$('#subscribe').load("https://raw.githack.com/Pacific-Feng/Pacific-Feng.github.io/4565bdbc6572f3e1f7f9d177d86d868823469535/subscribe.html");
+		  });
+		</script>			
+		
 		</head>
 		
 		<body>
 
-	      <header>
-			<div id= "TopTitle" >
-			  <div class="row">
-			      <div class="col-md-12">
-					<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white ">
-					  <div class="container-fluid">
-
-						  <a class="navbar-brand" href="https://pacific-feng.github.io/">
-						    <!---Pacific峰的部落格.png--->
-						    <img src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/Pacific.png" id="TopBlogName" alt="Unable to Show the Pic!">
-						  </a>
-
-						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-						  <span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-						  <ul class="navbar-nav me-2 ml-10 mb-lg-0">
-							<li class="nav-item">
-							  <a class="nav-link active" aria-current="page" href="https://pacific-feng.github.io/">關於我</a>
-							</li>
-							<li class="nav-item dropdown">
-							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								國外旅遊
-							  </a>
-							  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="https://pacific-feng.github.io/Pacific-Feng-America.io/">美西自由行</a></li>
-							  </ul>
-							</li>
-							<li class="nav-item dropdown">
-							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								國內旅遊
-							  </a>
-							  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="https://pacific-feng.github.io/Sun-Yat-Sen-University.io/">中山一隅</a></li>
-							  </ul>
-							</li>
-							<li class="nav-item dropdown">
-							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								科技新知
-							  </a>
-							  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="https://pacific-feng.github.io/Technology.io/">常見資訊問題</a></li>
-							  </ul>
-							</li>
-							<li class="nav-item dropdown">
-							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								競賽題目
-							  </a>
-							  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="https://pacific-feng.github.io/IC_Contest_Univeristy_Department.io/">IC Contest</a></li>
-							  </ul>
-							</li>
-						  </ul>	
-						</div>
-					  </div>
-					</nav>
-			      </div>
-			  </div>
-			</div>
-		  </header>
+	      <header id="headerPage"></header>
 		  
 		  
 		  <div class= "background-img">	
@@ -111,35 +62,7 @@
 		  
 		  
 		  
-		  <footer>
-		    <div id="BottomTitle">
-			    <div class="col-md-12">
-				  <div class="Outer">
-				    <div class="Inner">
-					  <div class="col-md-10 offset-md-1">
-					    <h6>Created by Min Feng Hsieh ^^</h6>
-					  </div>
-					  <div class="col-md-1 offset-md-10">
-					    <div class= "row">
-					      <div class="col-md-4">
-						    <!---fb.png--->
-					        <a href="https://www.facebook.com/Pacific%E5%B3%B0%E7%9A%84%E6%97%85%E9%81%8A%E5%A4%A9%E5%9C%B0-286386135493461/" target="_blank"><img src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/fb.png" alt="Unable to show the pic" id="fb"></a>
-					      </div>
-						  <div class="col-md-4">
-						    <!---ig.png--->
-						    <a href="https://www.instagram.com/pacific_feng_blog/" target="_blank"><img src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/ig.png" alt="Unable to show the pic" id="ig"></a>
-					      </div>
-						  <div class="col-md-4">
-						    <!---mail.png--->
-						    <a href="https://mail.google.com/mail/u/0/?fs=1&to=pacfeng@gmail.com&tf=cm&su=Pacific峰的部落格 讀者來信了喔!!" target="_blank"><img src="https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/mail.png" alt="Unable to show the pic" id="mail"></a>
-					      </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </footer>
+		  <footer id="footerPage"></footer>
 		</body>
 		
 	</html>
