@@ -146,6 +146,7 @@ footer div.Outer{
 	height: 80px;
 	width: 100%;
 	z-index: 0;
+	border-top: 1px solid #f0f0f0;
 }
 
 footer div h6{
