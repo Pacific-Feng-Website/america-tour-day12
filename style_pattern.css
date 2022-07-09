@@ -197,7 +197,7 @@ footer div h6{
 
 #BottomTitle{
 	position: relative;
-	top: 200px;
+	top: 5vh;
 }
 	
 @media only screen and (max-width: 1625px){
@@ -365,32 +365,6 @@ footer div h6{
 	}
 }
 
-.seperator{
-    margin: 1rem 0;
-    color: inherit;
-    background-color: currentColor;
-    border: 0;
-    opacity: .25;
-	height: 1px;
-}
-
 div.mce_inline_error{
 	background-color:#F0EFED !important;
-}
-
-html{
-	height: 100%; /*外層高度100%*/
-}
-
-body{
-	margin: 0;
-	min-height: 100%;
-	display: grid; 
-	grid-template-rows: 0.5fr auto;
-}
-
-.footer{
-	grid-row-start: 2;/*欄位從第二條橫線開始*/
-	grid-row-end: 3;/*欄位從第三條橫線結束*/
-
 }
