@@ -5,6 +5,10 @@ nav.navbar{
 	box-shadow: 0 5px 6px -6px #bbb;
 }
 
+a{
+	text-decoration:none;
+}
+
 
 #TopBlogName{
 	width: 200px;
