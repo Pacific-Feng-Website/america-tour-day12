@@ -710,3 +710,13 @@ h1{
 	color:#EACACB;
 	transition: 0.3s;
 }
+
+#hand-p{
+	color : gray;
+}
+
+#hand-p:hover{
+	font-weight: bold;
+	color : #EACACB;
+	transition: .3s;
+}
