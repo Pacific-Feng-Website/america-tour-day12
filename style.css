@@ -35,8 +35,8 @@ div.top-pic{
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-	background-image: url(https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/America12/sanmonica.jpg);
-	padding: 4rem 0 2rem 0;
+	background-image: url(https://raw.githubusercontent.com/Pacific-Feng/Picture_Storer/main/America1/stanford.jpg);
+	padding: 2.5rem 0 2rem 0;
 }
 
 @media (min-width: 991px){
@@ -106,8 +106,24 @@ h1{
 
 @media (max-width: 550px){
 	h1{
-		letter-spacing: 10px;
+		letter-spacing: 4px;
 		font-size: 25px;
+	}
+}
+
+@media (max-width: 412px){
+	h1{
+		letter-spacing: 0;
+	}
+}
+
+h2{
+	 margin-top: 4vh; 
+}
+
+@media (max-width: 412px){
+	h2{
+		margin-top: 2vh; 
 	}
 }
 
@@ -709,14 +725,4 @@ h1{
 #content #backMenu p:hover{
 	color:#EACACB;
 	transition: 0.3s;
-}
-
-#hand-p{
-	color : gray;
-}
-
-#hand-p:hover{
-	font-weight: bold;
-	color : #EACACB;
-	transition: .3s;
 }
