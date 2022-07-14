@@ -704,14 +704,17 @@ h2{
 }
 
 @media (max-width: 576px){
-	#recentPost .card-img-overlayer{
-		height: 35%;
+	#recentPost .card-img-overlayer h5{
+		margin-top: 2vh;
 	}
-	
+
 	#recentPost .card-img-overlayer p{
 		line-height: 50px !important;
 	}
 }
+
+
+
 
 #content #backMenu p{
 	width:auto; 
