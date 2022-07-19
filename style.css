@@ -136,8 +136,8 @@ h2{
 @media (max-width: 414px){
 	h2{
 		line-height:25px;
-		margin-top: 1vh; 
-		font-size:20px;
+		margin-top: 1.5vh; 
+		font-size:18px;
 	}
 }
 
