@@ -111,9 +111,15 @@ h1{
 	}
 }
 
-@media (max-width: 412px){
+@media (max-width: 414px){
 	h1{
 		letter-spacing: 0;
+	}
+}
+
+@media (max-width: 300px){
+	h1{
+		font-size:22px;
 	}
 }
 
@@ -121,9 +127,24 @@ h2{
 	 margin-top: 4vh; 
 }
 
-@media (max-width: 412px){
+@media (max-width: 1000px){
 	h2{
-		margin-top: 2vh; 
+		margin-top: 0.5vh; 
+	}
+}
+
+@media (max-width: 414px){
+	h2{
+		line-height:25px;
+		margin-top: 1vh; 
+		font-size:20px;
+	}
+}
+
+@media (max-width: 360px){
+	h2{
+		margin-top: 1vh; 
+		font-size:18px;
 	}
 }
 
