@@ -148,6 +148,16 @@ h2{
 	}
 }
 
+#hand-p{
+	color: #A2B59F;
+}
+
+#hand-p:hover{
+	color: #EACACB;
+	transition: .3s;
+	font-weight: bold;
+}
+
 #content p{
 	display: block;
 	font-size: 17px;
