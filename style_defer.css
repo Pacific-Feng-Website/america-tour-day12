@@ -1,0 +1,939 @@
+/* SELF_INTRO BOTTOM BAR BEGIN*/
+#selfIntroBottom{
+	grid-column:1/2;
+	grid-row: 2/3;
+	background: white;
+	display: none;
+}
+
+#selfIntroBottom img{
+	width: 100%;
+	height: auto;
+}
+
+#selfIntroBottom a{
+	text-decoration: none;
+	color: black;
+}
+
+
+@media only screen and (max-width: 1100px){
+	
+	#selfIntroBottom{
+		display: grid;
+	    grid-template-columns: 0.2fr 300px 40px 1fr 25px 0.5fr 0.2fr;
+		grid-template-rows: 60px 50px 45px 1fr 60px;
+	}
+	
+	#self-intro-bottom-pic{
+		grid-column: 2/3;
+		grid-row: 2/5;
+		display: flex;
+		justify-content: center;
+		align-items: end
+	}
+	
+	#self-intro-bottom-pic img{
+		border-radius: 100%;
+	}
+	
+	#self-intro-bottom-name{
+		grid-column: 4/5;
+		grid-row: 2/3;
+		display: flex;
+		justify-content: start;
+		align-items: center ;
+	}
+	
+	#self-intro-bottom-name h3{
+		grid-column: 4/5;
+		grid-row: 2/3;
+		font-size: 40px;
+		letter-spacing: 4px;
+		padding-left: 15px;
+	}
+	
+	#self-intro-bottom-intro{
+		grid-column: 4/5;
+		grid-row: 4/5;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+	}
+	
+	#self-intro-bottom-intro p{
+		letter-spacing: 3px;
+		writing-mode: vertical-lr;
+		width: 30px;
+	}
+	
+	#self-intro-bottom-contact{
+		grid-column: 6/7;
+		grid-row: 4/5;
+		display: flex;
+		flex-direction: column;
+		justify-content: center
+	}
+	
+	#self-intro-bottom-contact a{
+		padding: 10px 0 10px 30px;
+		border-left: 1px solid #ddd;
+		font-size: 12px
+	}
+	
+	#self-intro-bottom-contact i{
+		width: 16px;
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 940px){
+	
+	#selfIntroBottom{
+		display: grid;
+	    grid-template-columns: 1fr;
+		grid-template-rows: 60px 50px 30px 350px 30px 1fr 45px 20px 40px
+	}
+	
+	#self-intro-bottom-name{
+		grid-column: 1/2;
+		grid-row: 2/3;
+		display: flex;
+		justify-content: center;
+		align-items: center ;
+	}
+	
+	#self-intro-bottom-pic{
+		grid-column: 1/2;
+		grid-row: 4/5;
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+	
+	#self-intro-bottom-pic img{
+		width: 300px;
+	}
+	
+	#self-intro-bottom-intro{
+		grid-column: 1/2;
+		grid-row: 6/7;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+	}
+	
+	#self-intro-bottom-contact{
+		grid-column: 1/2;
+		grid-row: 8/9;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		justify-content: center;
+		padding-left: 35px;
+	}
+	
+	#self-intro-bottom-contact a{
+		border-left: none;
+		padding: 0;
+		margin-right: 40px;
+	}
+	
+}
+/* SELF_INTRO BOTTOM BAR END*/
+
+
+
+
+
+/* RELATED POST.CSS BEGIN */
+#relatedPost img{
+	width: 90%;
+	height: auto;
+	border-radius: 2px;
+}
+
+#relatedPost a{
+	text-decoration: none;
+	color: black;
+}
+
+#relatedPost{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	display: grid;
+	grid-template-columns: 1fr 500px 500px 1fr; /*寬:長=5:4*/
+	grid-template-rows: 80px 400px 400px 40px; /*共880+20*3=940px*/
+	grid-row-gap: 20px;
+	background: #f6f3f2;  /*顏色在這邊設定*/
+}
+
+#relatedPost #related-post-topic{
+	grid-column: 1/6;
+	grid-row: 1/2;
+	display:flex;
+	justify-content: center;
+	align-items: end;
+}
+
+#related-post-topic h4{
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+/* 第一個推薦文章*/
+#relatedPost #related-post-pic1{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	transition: all 0.3s ease;
+}
+
+#relatedPost #related-post-pic1 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame1{
+	grid-column: 2/3;
+	grid-row: 2/3;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name1{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name1 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+
+/* 第二個推薦文章*/
+
+#relatedPost #related-post-pic2{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 3/4;
+	grid-row: 2/3;
+	transition: all 0.3s ease;
+}
+
+#relatedPost #related-post-pic2 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame2{
+	grid-column: 3/4;
+	grid-row: 2/3;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name2{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name2 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+/* 第三個推薦文章*/
+
+#relatedPost #related-post-pic3{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2/3;
+	grid-row: 3/4;
+	transition: all 0.3s ease;
+}
+
+#relatedPost #related-post-pic3 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame3{
+	grid-column: 2/3;
+	grid-row: 3/4;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name3{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name3 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+/* 第四個推薦文章*/
+
+#relatedPost #related-post-pic4{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 3/4;
+	grid-row: 3/4;
+	transition: all 0.3s ease;
+}
+
+#relatedPost #related-post-pic4 a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#relatedPost #related-post-pic-name-frame4{
+	grid-column: 3/4;
+	grid-row: 3/4;
+	width: 400px; /*設定為#relatedPost的寬的長度*/
+	margin-left: calc((100% - 400px)/2);
+	margin-right: calc((100% - 400px)/2); /*260是#related-post-pic-name-frame1的寬*/
+	margin-top: calc((400px + 338px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+	padding: 5px;
+	height: 70px;
+	border: 1px solid #fff;
+}
+
+#relatedPost #related-post-pic-name4{
+	background: #fff;
+	height: 60px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+#related-post-pic-name4 h5{
+	font-size: 17px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+#related-post-pic1:hover, #related-post-pic2:hover, #related-post-pic3:hover, #related-post-pic4:hover{
+	
+}
+
+
+@media only screen and (max-width: 1100px){
+	
+	#relatedPost{
+		display: grid;
+		grid-template-columns: 1fr 400px 30px 400px 1fr;
+		grid-template-rows: 80px 320px 320px 40px;
+	}
+	
+	#relatedPost #related-post-pic1, #relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	
+	#relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic2, #relatedPost #related-post-pic-name-frame2{
+		grid-column: 4/5;
+		grid-row: 2/3;
+	}
+	
+	#relatedPost #related-post-pic-name-frame2{
+		grid-column: 4/5;
+		grid-row: 2/3;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic3, #relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	
+	#relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 3/4;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic4, #relatedPost #related-post-pic-name-frame4{
+		grid-column: 4/5;
+		grid-row: 3/4;
+	}
+	
+	#relatedPost #related-post-pic-name-frame4{
+		grid-column: 4/5;
+		grid-row: 3/4;
+		width: 320px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 70px;
+		border: 1px solid #fff;
+	}
+	
+}
+
+@media only screen and (max-width: 876px){
+	
+	#relatedPost{
+		display: grid;
+		grid-template-columns: 1fr 350px 15px 350px 1fr;
+		grid-template-rows: 80px 280px 280px 30px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame1, #relatedPost #related-post-pic-name-frame2, #relatedPost #related-post-pic-name-frame3, #relatedPost #related-post-pic-name-frame4{
+		width: 280px; /*設定為#relatedPost的寬的長度*/
+		margin-left: calc((100% - 280px)/2);
+		margin-right: calc((100% - 280px)/2); /*260是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((280px + 236px)/2 - 40px); /*280是整個frame的高(定義在#relatedPost)，236是圖片的高，40=(60/2)+10(60=#related-post-pic-name1的高)*/
+		padding: 5px;
+		height: 65px;
+		border: 1px solid #fff;
+	}
+	
+	#relatedPost #related-post-pic-name1, #relatedPost #related-post-pic-name2, #relatedPost #related-post-pic-name3, #relatedPost #related-post-pic-name4{
+		background: #fff;
+		height: 55px;
+		display:flex;
+		align-items: center;
+		justify-content:center;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	
+	#relatedPost{
+		display: grid;
+		grid-template-columns: 1fr 400px 1fr;
+		grid-template-rows: 80px 320px 320px 320px 320px 60px;
+		grid-row-gap: 0;
+	}
+	
+	#relatedPost #related-post-pic1, #relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	
+	#relatedPost #related-post-pic-name1{
+		height: 60px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame1{
+		grid-column: 2/3;
+		grid-row: 2/3;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic2, #relatedPost #related-post-pic-name-frame2{
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	
+	#relatedPost #related-post-pic-name2{
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame2{
+		grid-column: 2/3;
+		grid-row: 3/4;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic3, #relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 4/5;
+	}
+	
+	#relatedPost #related-post-pic-name3{
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame3{
+		grid-column: 2/3;
+		grid-row: 4/5;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic4, #relatedPost #related-post-pic-name-frame4{
+		grid-column: 2/3;
+		grid-row: 5/6;
+	}
+	
+	#relatedPost #related-post-pic-name4{
+		height: 70px;
+	}
+	
+	#relatedPost #related-post-pic-name-frame4{
+		grid-column: 2/3;
+		grid-row: 5/6;
+		width: 320px;
+		margin-left: calc((100% - 320px)/2);
+		margin-right: calc((100% - 320px)/2); /*400是#related-post-pic-name-frame1的寬*/
+		margin-top: calc((320px + 270px)/2 - 40px); /*338是圖片的高，400是整個frame的高(定義在#relatedPost)，45=(70/2)+10(70=#related-post-pic-name1的高)*/
+		height: 70px;
+	}
+
+}
+/* RELATED POST.CSS END */
+
+
+
+
+
+/* SUBSCRIPTION.CSS BEGIN */
+#subscriptionBoard{
+	grid-column: 1/2;
+	grid-row: 2/3;
+	display: grid;
+	grid-template-columns: 1fr 700px 1fr;
+	grid-template-rows: 150px 240px;
+}
+
+
+#subscription-box-topic{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#subscription-box-topic h4{
+	font-size: 25px !important;
+	letter-spacing: 10px !important;
+}
+
+#subscription-box{
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+@media only screen and (max-width: 1100px){
+	#subscriptionBoard{
+		grid-column:1/2;
+		grid-row: 3/4;
+	}
+}
+
+
+@media only screen and (max-width: 876px){
+	#subscriptionBoard{
+		display: grid;
+		grid-template-columns: 0.1fr 1fr 0.1fr;
+	}
+}
+
+div.mce_inline_error{
+	background-color: #F0EFED !important;
+}
+/* SUBSCRIPTION.CSS END */
+
+
+
+
+
+/* COMMENT.CSS BEGIN*/
+#commemtBoard{
+	grid-column: 1/2;
+	grid-row: 4/5;
+	display: grid;
+	grid-template-columns: 1fr 700px 1fr ;
+	grid-template-rows: 50px 100px 1fr  ;
+	background: #f6f3f2;  /*顏色在這邊設定*/
+	position:relative;
+	padding-bottom: 40px;
+}
+
+#commemt-box-topic{
+	grid-column: 1/4;
+	grid-row: 2/3;
+	text-align: center ;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#commemt-box-topic h4{
+	font-size: 25px !important;
+	letter-spacing: 10px !important;
+}
+
+#commemt-box{
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+@media only screen and (max-width: 1100px){
+	#commemtBoard{
+		grid-column:1/2;
+		grid-row: 4/5;
+	}
+}
+
+@media only screen and (max-width: 830px){
+	#commemtBoard{
+		display: grid;
+		grid-template-columns: 0.1fr 1fr 0.1fr ;
+		grid-template-rows: 50px 100px 1fr  ;
+	}
+}
+/* COMMENT.CSS END*/
+
+
+
+
+
+/* IG BOTTOM BAR.CSS BEGIN */
+:root{
+	--igBottomBarBtnColor: #f6ebe8;
+	--igBottomBarBtnColorHover: #d9a89d;
+}
+
+#igBottomBar img{
+	width: 100%;
+}
+
+#igBottomBar a{
+	text-decoration: none;
+}
+
+#igBottomBar{
+	grid-column: 1/2;
+	grid-row: 3/4;
+	display: grid;
+	grid-template-columns: 1fr 1100px 1fr;
+	grid-template-rows: 50px 100px 30px 1fr 30px 100px 50px;
+	position:relative;
+	background: #ecd5cd;
+}
+
+#ig-bottom-bar-name{
+	grid-column: 1/4;
+	grid-row: 2/3 ;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ig-bottom-bar-name h4{
+	font-size: 40px;
+}
+
+#ig-bottom-bar-outer-box{
+	grid-column: 2/3;
+	grid-row: 4/5;
+	padding: 5px;
+	border: 1px #fff solid;
+}
+
+#ig-bottom-bar-box{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+}
+
+#ig-bottom-bar-box i{
+	position: absolute;
+    z-index: 1;
+}
+
+#ig-bottom-bar-box .fa-image{
+	color: white;
+	font-size: 20px;
+	margin: 10px;
+}
+
+#ig-bottom-bar-box img{
+	position: relative;
+}
+
+#ig-bottom-bar-box-pic1{
+	grid-column: 1/2 ;
+	grid-row: 1/2 ;
+	transition: all 0.3s ease;
+}
+
+#ig-bottom-bar-box-pic2{
+	grid-column: 2/3 ;
+	grid-row: 1/2 ;
+	transition: all 0.3s ease;
+}
+
+#ig-bottom-bar-box-pic3{
+	grid-column: 3/4 ;
+	grid-row: 1/2 ;
+	transition: all 0.3s ease;
+}
+#ig-bottom-bar-box-pic4{
+	grid-column: 4/5 ;
+	grid-row: 1/2 ;
+	transition: all 0.3s ease;
+}
+
+#ig-bottom-bar-box-pic5{
+	grid-column: 5/6 ;
+	grid-row: 1/2 ;
+	transition: all 0.3s ease;
+}
+
+#ig-bottom-bar-box-pic1:hover, #ig-bottom-bar-box-pic2:hover, #ig-bottom-bar-box-pic3:hover, #ig-bottom-bar-box-pic4:hover, #ig-bottom-bar-box-pic5:hover{
+	opacity: 0.7;
+}
+
+#ig-bottom-bar-btn{
+	grid-column: 1/4 ;
+	grid-row: 6/7 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ig-bottom-bar-btn p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--igBottomBarBtnColor);
+    color: #73736F;
+	height: 43px;
+    width: 195px;
+    border-radius: 5px;
+	font-size: 14px;
+    letter-spacing: 2px;
+	transition: all 0.5s ease;
+}
+
+#ig-bottom-bar-btn p:hover{
+	background: var(--igBottomBarBtnColorHover);
+}
+
+@media only screen and (max-width: 1171px){
+	#igBottomBar{
+		grid-template-columns: 0.01fr 1fr 0.01fr;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	#igBottomBar{
+		grid-column:1/2;
+		grid-row: 5/6;
+	}
+}
+
+@media only screen and (max-width: 950px){
+	#igBottomBar{
+		display: grid;
+		grid-template-rows: 50px 100px 30px 1fr 25px 100px 20px;
+	}
+}
+
+@media only screen and (max-width: 786px){
+	#ig-bottom-bar-box .fa-image{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	#ig-bottom-bar-box .fa-image{
+		font-size: 10px;
+	}
+}
+/* IG BOTTOM BAR.CSS END */
+
+
+
+/* FOOTER.CSS BEGIN*/
+#footerPage{
+	grid-column: 1/2;
+	grid-row: 5/6;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #111;
+	height: auto;
+	width: 100%;
+	padding-top: 40px;
+	color: #fff;
+}
+
+#footer-main-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+#footer-main-content h3{
+	font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    letter-spacing: 2px;
+}
+
+
+#footer-main-content p{
+	max-width: 500px;
+    margin: 10px auto 0px auto;
+    line-height: 28px;
+    font-size: 14px;
+	opacity: 0.7;
+}
+
+#footer-main-content .socials{
+	list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.socials li{
+	margin: 0 10px;
+}
+
+.socials a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.socials a i{
+	font-size: 1.1rem;
+	transition: color 0.4 ease ;
+}
+
+.socials .fa-facebook{
+	color: white;
+	font-weight: 100;
+	grid-column: 2/3;
+}
+
+.socials .fa-facebook:hover{
+	color: #0165E1;
+	transition: 0.3s;
+}
+	
+.socials .fa-instagram{
+	color: white;
+	font-weight: 100;
+	grid-column: 3/4;
+}
+
+.socials .fa-instagram:hover{
+	color: #E1306C;
+	transition: .3s;
+}
+
+.socials .fa-envelope{
+	color: white;
+	font-weight: 100;
+	grid-column: 4/5;
+}
+
+.socials .fa-envelope:hover{
+	color: #0FB5EE;
+	transition: .3s;
+}
+
+#footer-bottom{
+	background: #000;
+	width: 100%;
+	padding: 20px 0 ; 
+	text-align: center;
+}
+
+#footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-decoration: capitalize;
+}
+
+#footer-bottom span{
+	text-decoration: uppercase;
+	opacity: 0.4;
+	font-weight: 200;
+}
+
+@media only screen and (max-width: 1100px){
+	#footerPage{
+		grid-column:1/2;
+		grid-row: 6/7;
+	}
+}
+/* FOOTER.CSS END*/
