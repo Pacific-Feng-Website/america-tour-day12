@@ -715,7 +715,6 @@ nav .icon-list{
 #hand-p:hover{
 	color: #EACACB;
 	transition: .3s;
-	font-weight: 600;
 }
 
 @media only screen and (max-width: 750px){
