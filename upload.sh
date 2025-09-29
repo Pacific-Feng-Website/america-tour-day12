@@ -1,5 +1,5 @@
 #!bin/bash
-comment_name="Edited at 2022/06/20"
+comment_name="use the static web url instead (2025/09/29)"
 git add .
 git commit -m "$comment_name"
 git push
